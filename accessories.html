@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WrestlingStore.pk | Accessories</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 per row */
+      gap: 20px;
+    }
+
+    .product {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: red;
+    }
+
+    .new-price {
+      color: green;
+      font-weight: bold;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #000;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f1f1f1;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">WrestlingStore.pk</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="superstars.html">Superstars</a>
+      <a href="accessories.html">Accessories</a>
+      <a href="combo.html">Combo Deals</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Accessories</h2>
+    <div class="product-grid">
+      
+      <div class="product">
+        <img src="ufc cap.png" alt="UFC Cap">
+        <h3>Black UFC Limited Edition Digital Print Cap</h3>
+        <p><span class="old-price">PKR 999</span> <span class="new-price">PKR 699</span></p>
+        <button onclick="addToCart('Black UFC Limited Edition Digital Print Cap')">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="ufc key.jpg" alt="UFC Keychain">
+        <h3>UFC Logo Keychain</h3>
+        <p><span class="old-price">PKR 599</span> <span class="new-price">PKR 399</span></p>
+        <button onclick="addToCart('UFC Logo Keychain')">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="dead key.jpg" alt="Undertaker Keychain">
+        <h3>Undertaker 30 Years Limited Edition Keychain</h3>
+        <p><span class="old-price">PKR 599</span> <span class="new-price">PKR 399</span></p>
+        <button onclick="addToCart('Undertaker 30 Years Limited Edition Keychain')">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="destruction cover.jpg" alt="Mobile Cover">
+        <h3>The Undertaker Brothers Of Destruction Mobile Cover</h3>
+        <p><span class="old-price">PKR 1299</span> <span class="new-price">PKR 699</span></p>
+        <button onclick="addToCart('The Undertaker Brothers Of Destruction Mobile Cover')">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="ultimate key chain.jpg" alt="Ultimate Warrior Keychain">
+        <h3>Ultimate Warrior Limited Edition Acrylic Keychain</h3>
+        <p><span class="old-price">PKR 500</span> <span class="new-price">PKR 399</span></p>
+        <button onclick="addToCart('Ultimate Warrior Limited Edition Acrylic Keychain')">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="dead staute.jpg" alt="Undertaker Statue">
+        <h3>WWE The Undertaker Acrylic Caricature Statue</h3>
+        <p><span class="old-price">PKR 1699</span> <span class="new-price">PKR 999</span></p>
+        <button onclick="addToCart('WWE The Undertaker Acrylic Caricature Statue')">Add to Cart</button>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div>&copy; 2025 WrestlingStore.pk</div>
+  </footer>
+
+  <script>
+    function addToCart(productName) {
+      alert(productName + " added to cart!");
+    }
+  </script>
+
+</body>
+</html>
